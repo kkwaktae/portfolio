@@ -7,7 +7,7 @@ window.onload = function(){
     const $pagerLi = $pager.getElementsByTagName('li');
     const $section = document.getElementsByTagName('section');
 
-    setTimeout(() => { //첫 소개 문구 생성 후 위로 이동
+    setTimeout(() => { //intro페이지 첫 소개 문구 생성 후 위로 이동
         $introText.style.opacity = 1;
         $introText.style.transition = 'all 1s ease';
         setTimeout(()=>{
@@ -30,8 +30,30 @@ window.onload = function(){
     const page02Y = $section[1].offsetTop;
     const page03Y = $section[2].offsetTop;
     const page04Y = $section[3].offsetTop;
-    const MINUS = -300;
+    const MINUS = -500;
 
+
+    findPager();
+
+    function findPager(){ //각 페이저 클릭 시 해당 페이지로 이동
+        for ( let i = 0 ; i < $pager.children.length ; i++ ) {
+            
+            $pager.children[i].addEventListener('click', (e) => {
+                if(i === 0) {
+                    window.scrollTo(0, page01Y);
+                }
+                if(i === 1) {
+                    window.scrollTo(0, page02Y);
+                }
+                if(i === 2) {
+                    window.scrollTo(0, page03Y);
+                }
+                if(i === 3) {
+                    window.scrollTo(0, page04Y);
+                }
+            });
+        }
+    }
 
     document.addEventListener('scroll', function(e){ // 스크롤 이벤트
         
@@ -41,33 +63,10 @@ window.onload = function(){
         if (!timer) { // 쓰로틀링
             timer = setTimeout(function() {
                 timer = null;
-                console.log(scrT);
             }, 500);
         }
             
-        findPager();
-        activePager();
 
-        function findPager(){ //각 페이저 클릭 시 해당 페이지로 이동
-            for ( let i = 0 ; i < $pager.children.length ; i++ ) {
-                
-                $pager.children[i].addEventListener('click', (e) => {
-                    if(i === 0) {
-                        window.scrollTo(0, page01Y);
-                    }
-                    if(i === 1) {
-                        window.scrollTo(0, page02Y);
-                    }
-                    if(i === 2) {
-                        window.scrollTo(0, page03Y);
-                    }
-                    if(i === 3) {
-                        window.scrollTo(0, page04Y);
-                    }
-                });
-            }
-        }
-    
         function activePager(){ // 페이지 별 페이저 색상 변경
 
             if(scrT >= 0 && scrT < page02Y + MINUS) {
@@ -98,6 +97,8 @@ window.onload = function(){
                 $pagerLi[3].classList.add('on');
             }
         }
+
+        activePager();
     });
 
 }
