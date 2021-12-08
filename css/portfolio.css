@@ -435,9 +435,9 @@ aside#history {
 }
 
 .page04 .pjt_wrap {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 10%;
   overflow: hidden;
   color: #fff;
 }
@@ -445,6 +445,7 @@ aside#history {
 .page04 .pjt_text {
   width: 40%;
   padding: 5%;
+  margin: 0 10%;
   background: #00001f;
   float: left;
 }
@@ -462,6 +463,6 @@ aside#history {
   width: 25rem;
   height: 25rem;
   float: right;
-  margin-right: 25%;
+  margin-right: 15%;
   background: url(../img/page04/device.png) no-repeat center / cover;
 }
