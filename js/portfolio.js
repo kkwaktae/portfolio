@@ -13,18 +13,18 @@ window.onload = function(){
         setTimeout(()=>{
             $introText.style.transform = 'translateY(-35vh)';
             $introText.style.transition = 'all 1.2s ease';
-        },1000);
-    },1000);
+        },700);
+    },500);
 
 
     setTimeout(() => { // 첫 소개 문구 이동 후 컨텐츠 나타나기
         $contentContainer.style.opacity = 1;
-        $contentContainer.style.transition = 'all 2.4s ease';
+        $contentContainer.style.transition = 'all 2s ease';
             setTimeout(() => { // 컨텐츠 나타난 후 페이저 보여주기
                 $pager.style.opacity = 1;
-                $pager.style.transition = 'all 2.4s ease';
-            }, 1000);
-    },3000);
+                $pager.style.transition = 'all 2s ease';
+            }, 500);
+    },2000);
 
     const page01Y = $section[0].offsetTop; // 각 페이지 별 높이 값 구하기
     const page02Y = $section[1].offsetTop;
