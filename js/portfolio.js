@@ -40,16 +40,16 @@ window.onload = function(){
             
             $pager.children[i].addEventListener('click', (e) => {
                 if(i === 0) {
-                    window.scrollTo(0, page01Y);
+                    window.scrollTo({left: 0, top: page01Y, behavior: 'smooth'});
                 }
                 if(i === 1) {
-                    window.scrollTo(0, page02Y);
+                    window.scrollTo({left: 0, top: page02Y, behavior: 'smooth'});
                 }
                 if(i === 2) {
-                    window.scrollTo(0, page03Y);
+                    window.scrollTo({left: 0, top: page03Y, behavior: 'smooth'});
                 }
                 if(i === 3) {
-                    window.scrollTo(0, page04Y);
+                    window.scrollTo({left: 0, top: page04Y, behavior: 'smooth'});
                 }
             });
         }
