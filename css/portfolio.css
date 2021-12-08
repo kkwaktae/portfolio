@@ -130,6 +130,10 @@ main.content-container .text-box {
   border: none;
 }
 
+.text-box a {
+  color: #ffca28;
+}
+
 .pager {
   width: 6rem;
   height: 10rem;
@@ -457,6 +461,10 @@ aside#history {
 .page04 .pjt_text span {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.page04 .pjt_text a {
+  color: #ffca28;
 }
 
 .page04 .pjt_img {
