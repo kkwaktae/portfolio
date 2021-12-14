@@ -16,7 +16,6 @@ window.onload = function(){
         },700);
     },500);
 
-
     setTimeout(() => { // 첫 소개 문구 이동 후 컨텐츠 나타나기
         $contentContainer.style.opacity = 1;
         $contentContainer.style.transition = 'all 2s ease';
@@ -101,4 +100,20 @@ window.onload = function(){
         activePager();
     });
 
+    const modal = document.getElementById('pjt_godiva');
+    const closeModal = document.getElementsByClassName('close')[0];
+    const viewPjt = document.getElementsByClassName('button')[0];
+
+    function controlModal(){
+        viewPjt.addEventListener('click', function(e){
+            e.preventDefault();
+            modal.classList.remove('hidden');
+        });
+
+        closeModal.addEventListener('click', function(e){
+            e.preventDefault();
+            modal.classList.add('hidden');
+        });
+    }
+    controlModal();
 }
