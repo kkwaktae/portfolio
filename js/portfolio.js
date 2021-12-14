@@ -16,7 +16,6 @@ window.onload = function(){
         },700);
     },500);
 
-
     setTimeout(() => { // 첫 소개 문구 이동 후 컨텐츠 나타나기
         $contentContainer.style.opacity = 1;
         $contentContainer.style.transition = 'all 2s ease';
@@ -32,6 +31,7 @@ window.onload = function(){
     const page04Y = $section[3].offsetTop;
     const MINUS = -500;
 
+    const $gage = document.getElementsByClassName('graph-child'); // Skill 그래프 게이지
 
     findPager();
 
@@ -66,7 +66,16 @@ window.onload = function(){
             }, 500);
         }
             
+        
 
+        function upGage(){ // Skill 페이지 스킬별 게이지 증가 애니메이션
+            if(scrT >= page03Y + MINUS && scrT < page04Y + MINUS) {
+                for (let i = 0 ; i < $gage.length ; i++) {
+                    $gage[i].classList.add(`gc0${i+1}`);
+                }
+            }
+        }
+        
         function activePager(){ // 페이지 별 페이저 색상 변경
 
             if(scrT >= 0 && scrT < page02Y + MINUS) {
@@ -97,8 +106,31 @@ window.onload = function(){
                 $pagerLi[3].classList.add('on');
             }
         }
-
+        upGage();
         activePager();
     });
 
+
+    // Project 페이지 썸네일 클릭 시 상세보기 모달박스 제어
+    const modal = document.getElementById('pjt_godiva');
+    const closeModal = document.getElementsByClassName('close')[0];
+    const viewPjt = document.getElementsByClassName('button')[0];
+    const thumbnail = document.getElementById('godiva');
+
+    function controlModal(){
+        viewPjt.addEventListener('click', function(e){
+            e.preventDefault();
+            modal.classList.remove('hidden');
+        });
+        thumbnail.addEventListener('click', function(e){
+            e.preventDefault();
+            modal.classList.remove('hidden');            
+        })
+
+        closeModal.addEventListener('click', function(e){
+            e.preventDefault();
+            modal.classList.add('hidden');
+        });
+    }
+    controlModal();
 }
