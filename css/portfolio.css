@@ -398,29 +398,36 @@ aside#history {
   top: 0;
   left: 0;
   transition: all 2s ease;
+  opacity: 0;
 }
 
-.page03:hover .gc01 {
+.page03 .gc01 {
   width: 60%;
+  opacity: 1;
 }
-.page03:hover .gc02 {
+.page03 .gc02 {
   width: 50%;
+  opacity: 1;
   transition-delay: 0.5s;
 }
-.page03:hover .gc03 {
+.page03 .gc03 {
   width: 80%;
+  opacity: 1;
   transition-delay: 1s;
 }
-.page03:hover .gc04 {
+.page03 .gc04 {
   width: 40%;
+  opacity: 1;
   transition-delay: 1.5s;
 }
-.page03:hover .gc05 {
+.page03 .gc05 {
   width: 60%;
+  opacity: 1;
   transition-delay: 2s;
 }
-.page03:hover .gc06 {
+.page03 .gc06 {
   width: 10%;
+  opacity: 1;
   transition-delay: 2.5s;
 }
 
@@ -446,6 +453,8 @@ aside#history {
   padding: 1%;
 }
 
+/* 고디바 프로젝트 썸네일 */
+
 .pjt_wrap #godiva {
   width: 15rem;
   height: 15rem;
@@ -453,7 +462,7 @@ aside#history {
   background: url(../img/page04/thumbnail.jpg) no-repeat center / cover;
   cursor: pointer;
   border-radius: 8%;
-  transition: all 0.8s ease;
+  transition: all 0.7s ease;
 }
 
 .pjt_wrap #godiva:hover {
@@ -464,17 +473,18 @@ aside#history {
   width: 100%;
   height: 100%;
   border-radius: 8%;
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: all 0.8s ease;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.7s ease;
   opacity: 0;
 }
 
 #godiva .pjt_content {
+  /* 썸네일 내부 텍스트 */
   width: 100%;
-  padding-top: calc(50% - 4rem);
+  padding-top: calc(50% - 5rem);
   text-align: center;
   color: #fff;
-  transition: all 0.8s ease;
+  transition: all 0.7s ease;
   opacity: 0;
   font-size: 0.8rem;
   text-indent: 0.1rem;
