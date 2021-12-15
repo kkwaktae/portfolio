@@ -111,7 +111,7 @@ window.onload = function(){
     });
 
 
-    // Project 페이지 썸네일 클릭 시 상세보기 모달박스 제어
+    // Project 페이지 썸네일 클릭 시 모달박스 제어
     const modal = document.getElementById('pjt_godiva');
     const closeModal = document.getElementsByClassName('close')[0];
     const viewPjt = document.getElementsByClassName('button')[0];
@@ -120,11 +120,11 @@ window.onload = function(){
     function controlModal(){
         viewPjt.addEventListener('click', function(e){
             e.preventDefault();
-            modal.classList.remove('hidden');
+            modal.classList.remove('hidden');          
         });
         thumbnail.addEventListener('click', function(e){
             e.preventDefault();
-            modal.classList.remove('hidden');            
+            modal.classList.remove('hidden');
         })
 
         closeModal.addEventListener('click', function(e){
