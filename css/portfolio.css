@@ -4,6 +4,7 @@ html {
 
 body {
   font-size: 1em;
+  font-family: "Nanum-Gothic", "Gothic", sans-serif;
 }
 
 * {
@@ -64,7 +65,7 @@ section {
   position: absolute;
   left: calc(50% - 15rem);
   top: calc(50% - 4.5rem);
-  z-index: 999;
+  z-index: 900;
   opacity: 0;
 }
 
@@ -108,15 +109,25 @@ main.content-container .face-pic {
 main.content-container .introduction {
   width: 30%;
   text-align: center;
-  color: #fff;
+  color: #bbb;
   letter-spacing: 0.1rem;
   text-indent: 0.1rem;
+  font-size: 1rem;
+}
+
+main.content-container .introduction p {
+  line-height: 1.8rem;
+}
+
+main.content-container .introduction span {
+  color: #fff;
 }
 
 main.content-container .text-box {
   width: 30%;
   padding: 9% 2% 0 0;
   color: #fff;
+  font-size: 0.8rem;
 }
 
 .text-box div {
@@ -131,14 +142,15 @@ main.content-container .text-box {
 }
 
 .text-box a {
-  color: #ffca28;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .pager {
   width: 6rem;
   height: 10rem;
   text-align: center;
-  color: #cfcfcf;
+  color: #bbb;
   position: fixed;
   z-index: 990;
   top: calc(50% - 5rem);
@@ -438,7 +450,7 @@ aside#history {
   margin: 5% 0;
 }
 
-.page04 h2 {
+.page04 main h2 {
   width: 100%;
   font-size: 3rem;
   text-align: center;
@@ -453,7 +465,7 @@ aside#history {
   padding: 1%;
 }
 
-/* 고디바 프로젝트 썸네일 */
+/*-------------------------- 고디바 프로젝트 썸네일 -------------------------*/
 
 .pjt_wrap #godiva {
   width: 15rem;
@@ -529,6 +541,8 @@ aside#history {
   color: #ffca28;
 }
 
+/*------------------------- 프로젝트 상세설명 모달박스 ---------------------*/
+
 .pjt_wrap .modal_wrap {
   background: transparent;
   z-index: 997;
@@ -540,11 +554,11 @@ aside#history {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
-  z-index: 998;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 998;
   margin: 0 auto;
   visibility: visible;
   opacity: 1;
@@ -557,7 +571,8 @@ aside#history {
 }
 
 .modal_wrap .modal .content {
-  background: #fff;
+  background: url(../img/page04/backmornitor.png) no-repeat center / 100%;
+  background-attachment: fixed;
   border-radius: 1rem;
   box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.25);
   width: 80%;
@@ -581,4 +596,43 @@ aside#history {
   background: #131313;
   color: #fff;
   cursor: pointer;
+}
+
+/*------------------------- 프로젝트 상세설명 모달박스 내부컨텐츠 ---------------------*/
+
+.modal_wrap #mornitor {
+  position: fixed;
+  bottom: 3.5rem;
+  right: 8rem;
+}
+
+.modal_wrap #mornitor img {
+  width: 90%;
+  vertical-align: middle;
+  border: none;
+  display: block;
+}
+
+.modal_wrap .inner_content {
+  width: 100%;
+  height: 100%;
+  padding-left: 5%;
+  color: #fff;
+  font-family: "Nanum-Myeongjo", "Myeongjo", serif;
+  font-size: 1.3rem;
+}
+
+.modal_wrap .inner_content #inner_content_main {
+  font-size: 2.5rem;
+  margin: 5% 0 1% 0;
+  letter-spacing: 0.1rem;
+  text-indent: 0.1rem;
+  font-weight: bold;
+}
+
+.modal_wrap .inner_content #inner_content_sub {
+  text-indent: 0.3rem;
+}
+
+.modal_wrap .inner_content #inner_content_explain {
 }
