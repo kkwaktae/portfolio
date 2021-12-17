@@ -524,6 +524,7 @@ aside#history {
 .pjt_wrap .button {
   width: 6rem;
   margin: 2% auto;
+  margin-bottom: 1%;
   font-size: 0.75rem;
   line-height: 2rem;
   border: 1px solid #00001f;
@@ -538,6 +539,33 @@ aside#history {
 .pjt_wrap .button:hover {
   background: #00001f;
   border-color: #00001f;
+  color: #ffca28;
+}
+
+.pjt_wrap .link_btn {
+  width: 6rem;
+  margin: 1% auto;
+  font-size: 0.75rem;
+  line-height: 2rem;
+  border: 1px solid #00001f;
+  color: #00001f;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-indent: 0.1rem;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+.pjt_wrap .link_btn a {
+  transition: all 0.7s ease;
+}
+
+.pjt_wrap .link_btn:hover {
+  background: #00001f;
+  border-color: #00001f;
+}
+
+.pjt_wrap .link_btn:hover a {
   color: #ffca28;
 }
 
@@ -635,4 +663,5 @@ aside#history {
 }
 
 .modal_wrap .inner_content #inner_content_explain {
+  text-indent: 0.3rem;
 }
