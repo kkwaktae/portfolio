@@ -101,7 +101,7 @@ main.content-container .face-pic {
 }
 
 .face-pic img {
-  width: 100%;
+  width: 90%;
   vertical-align: bottom;
   border: none;
 }
@@ -626,6 +626,22 @@ aside#history {
   cursor: pointer;
 }
 
+.modal_wrap #pages_image_box li {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 5%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.7s ease;
+}
+
+.modal_wrap #pages_image_box li img {
+  vertical-align: bottom;
+  border: none;
+}
+
 /*------------------------- 프로젝트 상세설명 모달박스 내부컨텐츠 ---------------------*/
 
 .modal_wrap .inner_content {
@@ -638,35 +654,57 @@ aside#history {
 
 .modal_wrap .inner_content #inner_content_main {
   font-size: 2.5rem;
-  margin: 5% 0 1% 0;
+  margin: 5% 0 10% 0;
   letter-spacing: 0.1rem;
   text-indent: 0.1rem;
   font-weight: bold;
   font-family: "Nanum-Myeongjo", "Myeongjo", serif;
 }
 
-.modal_wrap .inner_content #inner_content_sub {
-  text-indent: 0.3rem;
+.modal_wrap .inner_content #inner_content_main span {
+  font-size: 1.3rem;
+  margin-left: 2rem;
   font-family: "Nanum-Myeongjo", "Myeongjo", serif;
 }
 
+/* Content 제목 */
 .modal_wrap .inner_content .inner_content_text01 {
-  /* Content 제목 */
   text-indent: 0.3rem;
   letter-spacing: 0.1rem;
   margin-top: 3%;
 }
 
+/* Content 하위 텍스트 */
 .modal_wrap .inner_content .inner_content_text02 {
-  /* Content 하위 텍스트 */
   margin-left: 0.3rem;
   letter-spacing: 0.1rem;
   margin-top: 1%;
   font-size: 0.8rem;
   line-height: 1.8;
   color: #aaa;
+  overflow: hidden;
 }
 
+.modal_wrap .inner_content #godiva_pages_box {
+  position: relative;
+  top: 0;
+  left: -0.5%;
+}
+
+.modal_wrap .inner_content #godiva_pages_box a {
+  text-align: center;
+  display: block;
+  float: left;
+  margin-right: 3%;
+  color: #ffca28;
+  padding: 0.5%;
+}
+
+.modal_wrap .inner_content #godiva_pages_box a:last-child {
+  margin-right: 60%;
+}
+
+/* 모달 background image */
 .modal_wrap #mornitor {
   position: fixed;
   bottom: 3.5rem;
