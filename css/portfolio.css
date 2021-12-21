@@ -548,15 +548,15 @@ aside#history {
   font-size: 0.75rem;
   line-height: 2rem;
   border: 1px solid #00001f;
-  color: #00001f;
   text-align: center;
   letter-spacing: 0.1rem;
   text-indent: 0.1rem;
-  cursor: pointer;
   transition: all 0.7s ease;
 }
 
 .pjt_wrap .link_btn a {
+  color: #00001f;
+  display: block;
   transition: all 0.7s ease;
 }
 
@@ -628,6 +628,45 @@ aside#history {
 
 /*------------------------- 프로젝트 상세설명 모달박스 내부컨텐츠 ---------------------*/
 
+.modal_wrap .inner_content {
+  width: 100%;
+  height: 100%;
+  padding-left: 5%;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.modal_wrap .inner_content #inner_content_main {
+  font-size: 2.5rem;
+  margin: 5% 0 1% 0;
+  letter-spacing: 0.1rem;
+  text-indent: 0.1rem;
+  font-weight: bold;
+  font-family: "Nanum-Myeongjo", "Myeongjo", serif;
+}
+
+.modal_wrap .inner_content #inner_content_sub {
+  text-indent: 0.3rem;
+  font-family: "Nanum-Myeongjo", "Myeongjo", serif;
+}
+
+.modal_wrap .inner_content .inner_content_text01 {
+  /* Content 제목 */
+  text-indent: 0.3rem;
+  letter-spacing: 0.1rem;
+  margin-top: 3%;
+}
+
+.modal_wrap .inner_content .inner_content_text02 {
+  /* Content 하위 텍스트 */
+  margin-left: 0.3rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1%;
+  font-size: 0.8rem;
+  line-height: 1.8;
+  color: #aaa;
+}
+
 .modal_wrap #mornitor {
   position: fixed;
   bottom: 3.5rem;
@@ -639,29 +678,4 @@ aside#history {
   vertical-align: middle;
   border: none;
   display: block;
-}
-
-.modal_wrap .inner_content {
-  width: 100%;
-  height: 100%;
-  padding-left: 5%;
-  color: #fff;
-  font-family: "Nanum-Myeongjo", "Myeongjo", serif;
-  font-size: 1.3rem;
-}
-
-.modal_wrap .inner_content #inner_content_main {
-  font-size: 2.5rem;
-  margin: 5% 0 1% 0;
-  letter-spacing: 0.1rem;
-  text-indent: 0.1rem;
-  font-weight: bold;
-}
-
-.modal_wrap .inner_content #inner_content_sub {
-  text-indent: 0.3rem;
-}
-
-.modal_wrap .inner_content #inner_content_explain {
-  text-indent: 0.3rem;
 }
