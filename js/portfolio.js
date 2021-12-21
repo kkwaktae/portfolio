@@ -133,4 +133,29 @@ window.onload = function(){
         });
     }
     controlModal();
+
+    // 모달박스 내 프로젝트 pages 호버시 이미지 띄우기
+
+    const pages = document.getElementById('godiva_pages_box');
+    const pagesChildren = pages.getElementsByTagName('a');
+    const pagesImageBox = document.getElementById('pages_image_box');
+    const pagesImage = pagesImageBox.getElementsByTagName('li');
+
+    for (let i = 0; i < pagesChildren.length; i++) {
+        pagesChildren[i].addEventListener("click", function(e){
+            e.preventDefault();
+        });
+        pagesChildren[i].addEventListener("mouseover", function(e){
+            pagesImage[i].style.opacity = '1';
+            pagesImage[i].style.visibility = 'visible';
+        });
+        pagesChildren[i].addEventListener("mouseout", function(e){
+            for( let i = 0; i < pagesChildren.length; i++) {
+                pagesImage[i].style.opacity = '0';
+                pagesImage[i].style.visibility = 'hidden';
+            }
+        });
+    }
+
+    
 }
