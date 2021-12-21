@@ -688,19 +688,25 @@ aside#history {
 .modal_wrap .inner_content #godiva_pages_box {
   position: relative;
   top: 0;
-  left: -0.5%;
 }
 
-.modal_wrap .inner_content #godiva_pages_box a {
+.modal_wrap .inner_content #godiva_pages_box div {
+  width: 6%;
   text-align: center;
-  display: block;
+  cursor: pointer;
   float: left;
-  margin-right: 3%;
+  margin-right: 2%;
   color: #ffca28;
-  padding: 0.5%;
+  border: 1px solid #ffca28;
+  padding: 0.5% 1%;
+  transition: all 0.7s ease;
 }
 
-.modal_wrap .inner_content #godiva_pages_box a:last-child {
+.modal_wrap .inner_content #godiva_pages_box div:hover {
+  background: #000;
+}
+
+.modal_wrap .inner_content #godiva_pages_box div:last-child {
   margin-right: 60%;
 }
 
