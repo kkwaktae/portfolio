@@ -145,11 +145,15 @@ console.log(pagesChildren);
         pagesChildren[i].addEventListener("click", function(e){
             pagesImage[i].style.opacity = '1';
             pagesImage[i].style.visibility = 'visible';
+            pagesChildren[i].style.color = "#ffca28"
+            pagesChildren[i].style.borderColor = "#ffca28"
         });
-        pagesChildren[i].addEventListener("mouseout", function(e){
+        pagesImageBox.addEventListener("mouseout", function(e){
             for( let i = 0; i < pagesChildren.length; i++) {
                 pagesImage[i].style.opacity = '0';
                 pagesImage[i].style.visibility = 'hidden';
+                pagesChildren[i].style.color = "#aaa"
+                pagesChildren[i].style.borderColor = "#aaa"
             }
         });
     }
