@@ -474,8 +474,8 @@ aside#history {
 /*-------------------------- 고디바 프로젝트 썸네일 -------------------------*/
 
 .pjt_wrap #godiva {
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   margin: 0 auto;
   background: url(../img/page04/thumbnail.jpg) no-repeat center / cover;
   cursor: pointer;
@@ -499,18 +499,18 @@ aside#history {
 #godiva .pjt_content {
   /* 썸네일 내부 텍스트 */
   width: 100%;
-  padding-top: calc(50% - 5rem);
+  padding-top: calc(50% - 3.75rem);
   text-align: center;
   color: #fff;
   transition: all 0.7s ease;
   opacity: 0;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   text-indent: 0.1rem;
   letter-spacing: 0.1rem;
 }
 
 #godiva .pjt_content li {
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 
 .pjt_wrap #godiva:hover .pjt_content_wrap {
@@ -528,11 +528,11 @@ aside#history {
 }
 
 .pjt_wrap .button {
-  width: 6rem;
+  width: 4rem;
   margin: 2% auto;
   margin-bottom: 1%;
-  font-size: 0.75rem;
-  line-height: 2rem;
+  font-size: 0.6rem;
+  line-height: 1.5rem;
   border: 1px solid #00001f;
   color: #00001f;
   text-align: center;
@@ -549,10 +549,10 @@ aside#history {
 }
 
 .pjt_wrap .link_btn {
-  width: 6rem;
+  width: 4rem;
   margin: 1% auto;
-  font-size: 0.75rem;
-  line-height: 2rem;
+  font-size: 0.6rem;
+  line-height: 1.5rem;
   border: 1px solid #00001f;
   text-align: center;
   letter-spacing: 0.1rem;
@@ -655,12 +655,12 @@ aside#history {
   height: 100%;
   padding-left: 5%;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .modal_wrap .inner_content #inner_content_main {
-  font-size: 2.5rem;
-  margin: 5% 0 10% 0;
+  font-size: 2rem;
+  margin: 5% 0 5% 0;
   letter-spacing: 0.1rem;
   text-indent: 0.1rem;
   font-weight: bold;
@@ -668,7 +668,7 @@ aside#history {
 }
 
 .modal_wrap .inner_content #inner_content_main span {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-left: 2rem;
   font-family: "Nanum-Myeongjo", "Myeongjo", serif;
 }
@@ -677,7 +677,7 @@ aside#history {
 .modal_wrap .inner_content .inner_content_text01 {
   text-indent: 0.3rem;
   letter-spacing: 0.1rem;
-  margin-top: 2.5%;
+  margin: 2.5% 0;
 }
 
 /* Content 하위 텍스트 */
@@ -685,8 +685,8 @@ aside#history {
   margin-left: 0.3rem;
   letter-spacing: 0.1rem;
   margin-top: 1%;
-  font-size: 0.8rem;
-  line-height: 1.8;
+  font-size: 0.6rem;
+  line-height: 1.2rem;
   color: #aaa;
   overflow: hidden;
 }
@@ -719,9 +719,10 @@ aside#history {
 
 /* 모달 background image */
 .modal_wrap #mornitor {
+  width: 40%;
   position: fixed;
-  bottom: 3.5rem;
-  right: 8rem;
+  bottom: 10%;
+  right: 8%;
 }
 
 .modal_wrap #mornitor img {
